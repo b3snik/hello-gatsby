@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import * as React from "react";
 import { graphql, useStaticQuery } from 'gatsby'
 
 const Seo = ({ title, description }) => {
@@ -13,10 +13,10 @@ const Seo = ({ title, description }) => {
   `)
 
   return (
-    <Fragment> 
+    <> 
       <title>{title} | {data.site.siteMetadata.title}</title>
-      <meta name="description" content={description}></meta> 
-    </Fragment>    
+      <meta name="description" content={description}></meta>
+    </>    
   )
 }
 
