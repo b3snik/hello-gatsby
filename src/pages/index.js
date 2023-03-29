@@ -18,7 +18,7 @@ const IndexPage = () => {
 }
 
 // You'll learn about this in the next task, just copy it for now
-export const Head = () => <Seo title="Home Page" />
+export const Head = () => <Seo title="Home Page" description="Home page for the gatsby tutorial" />
 
 // Step 3: Export your component
 export default IndexPage
